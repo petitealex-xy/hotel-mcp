@@ -1,0 +1,16 @@
+{
+  "_comment": "Add this block to ~/Library/Application Support/Claude/claude_desktop_config.json (macOS)",
+  "mcpServers": {
+    "hotel-mcp": {
+      "command": "python",
+      "args": ["-m", "src.server"],
+      "cwd": "/path/to/hotel-mcp-server",
+      "env": {
+        "PMS_ADAPTER": "mock",
+        "CRM_ADAPTER": "mock",
+        "HOTEL_MCP_ENV": "development",
+        "HOTEL_MCP_LOG_LEVEL": "INFO"
+      }
+    }
+  }
+}

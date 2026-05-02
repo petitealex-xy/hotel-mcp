@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "hotel-mcp": {
+      "type": "stdio",
+      "command": "/Users/gimhongju/hotel-mcp-server/.venv/bin/python",
+      "args": ["-m", "src.server"],
+      "cwd": "/Users/gimhongju/hotel-mcp-server",
+      "env": {
+        "PMS_ADAPTER": "mock",
+        "CRM_ADAPTER": "mock",
+        "HOTEL_MCP_ENV": "development"
+      }
+    }
+  }
+}
