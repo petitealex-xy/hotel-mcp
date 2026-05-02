@@ -21,7 +21,8 @@ def get_pms_adapter() -> BasePMSAdapter:
         raise NotImplementedError("Cloudbeds adapter is on the roadmap — use mock for now")
 
     if adapter_name == "mews":
-        raise NotImplementedError("Mews adapter is on the roadmap — use mock for now")
+        from src.adapters.pms.mews import MewsAdapter
+        return MewsAdapter(settings.pms)
 
     if adapter_name == "mock":
         from src.adapters.pms.mock import MockPMSAdapter
